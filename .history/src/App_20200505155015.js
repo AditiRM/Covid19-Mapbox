@@ -74,7 +74,7 @@ useEffect(() => {
             ['linear'],
             ['get', 'cases'],
             1, 1,
-            100000, 1.05 ],
+            100000, 1.0],
           'circle-radius': [
             'interpolate',
             ['linear'],
@@ -82,15 +82,15 @@ useEffect(() => {
             1,
             5,
             1000,
-            8,
-            4000,
             10,
-            8000,
+            4000,
             15,
+            8000,
+            20,
             12000,
-            18,
+            25,
             100000,
-            25
+            35
           ],
           'circle-color': [
             'interpolate',

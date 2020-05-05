@@ -88,9 +88,9 @@ useEffect(() => {
             8000,
             15,
             12000,
-            18,
+            20,
             100000,
-            25
+            30
           ],
           'circle-color': [
             'interpolate',
