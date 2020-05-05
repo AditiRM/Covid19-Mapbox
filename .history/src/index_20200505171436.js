@@ -4,11 +4,28 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-
+import { AppContainer, MainContainer } from './styled';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+
+    const App = () => (
+  <AppContainer>
+    /*<Layout />*/
+
+    <Fragment>
+    <Header />
+    <S.MainContainer>
+      <Aside />
+      <MapContainer />
+    </S.MainContainer>
+  </Fragment>
+  </AppContainer>
+  );
+
+
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
