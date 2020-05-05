@@ -39,7 +39,7 @@ function App() {
 
 const { data } = useSWR('https://corona.lmao.ninja/v2/jhucsse', fetcher);
 
-// Initialize the map
+// Initialize our map
 useEffect(() => {
   if (data) {
     const map = new mapboxgl.Map({
@@ -50,10 +50,10 @@ useEffect(() => {
     });
 
     // Add navigation controls to the top right of the canvas
-    //For zoom-in and zoom-out option!!!
     map.addControl(new mapboxgl.NavigationControl());
 
     map.once('load', function () {
+      // Add our SOURCE
       map.addSource('points', {
         type: 'geojson',
         data: {
@@ -167,7 +167,7 @@ useEffect(() => {
   return (
     <div className="App">
       <div className="mapContainer">
-        {/* Mapbox container */}
+        {/* Assigned Mapbox container */}
         <div className="mapBox" ref={mapboxElRef} />
       </div>
     </div>

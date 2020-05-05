@@ -167,7 +167,7 @@ useEffect(() => {
   return (
     <div className="App">
       <div className="mapContainer">
-        {/* Mapbox container */}
+        {/* Assigned Mapbox container */}
         <div className="mapBox" ref={mapboxElRef} />
       </div>
     </div>
