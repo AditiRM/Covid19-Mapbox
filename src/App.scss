@@ -22,7 +22,7 @@ body {
   height: 100%;
 }
 
-/* Tooltip code */
+/* MapboxGL Custom Styles */
 .mapboxgl-popup {
   font-family: "Baloo Thambi 2", cursive;
   font-size: 10px;
@@ -51,6 +51,7 @@ body {
   }
 
   img {
+    display: block;
     width: 4rem;
     height: 4rem;
   }

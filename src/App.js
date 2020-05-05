@@ -28,11 +28,11 @@ function App() {
           coordinates: [point.coordinates.longitude, point.coordinates.latitude]
         },
         properties: {
-          id: index,
-          country: point.country,
-          province: point.province,
-          cases: point.stats.confirmed,
-          deaths: point.stats.deaths
+          id	   : index,
+          country  : point.country,
+          province : point.province,
+          cases	   : point.stats.confirmed,
+          deaths   : point.stats.deaths
         }
       }))
     );
